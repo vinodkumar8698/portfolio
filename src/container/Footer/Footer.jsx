@@ -31,8 +31,7 @@ const Footer = () => {
       .then(() => {
         setLoading(false);
         setIsFormSubmitted(true);
-      })
-      .catch((err) => console.log(err));
+      });
   };
 
   return (
@@ -42,11 +41,11 @@ const Footer = () => {
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <img src={images.email} alt="email" />
-          <a href="mailto:hello@micael.com" className="p-text">hello@micael.com</a>
+          <a href="mailto:hello@micael.com" className="p-text">vinodkumarkanike00@outlook.com</a>
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
-          <a href="tel:+1 (123) 456-7890" className="p-text">+1 (123) 456-7890</a>
+          <a href="tel:+91 9158096089" className="p-text">+91 9158096089</a>
         </div>
       </div>
       {!isFormSubmitted ? (
